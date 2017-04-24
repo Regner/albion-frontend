@@ -12,7 +12,7 @@
 
 <script>
   import { mapGetters } from 'vuex'
-  import SdeExplorer from './SDEExplorer.vue'
+  import SdeExplorer from './SdeExplorer.vue'
 
   export default {
     components: {

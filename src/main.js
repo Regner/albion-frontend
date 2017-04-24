@@ -5,7 +5,7 @@ import VueRouter from 'vue-router'
 import store from './store'
 import App from './components/App.vue'
 import About from './components/About.vue'
-import SDE from './components/SDE.vue'
+import SDE from './components/Sde.vue'
 
 
 axios.defaults.baseURL = process.env.BASE_URL
