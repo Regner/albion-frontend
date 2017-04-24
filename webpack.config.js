@@ -54,7 +54,7 @@ if (process.env.NODE_ENV === 'production') {
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"',
-        BASE_URL: '"https://api.albion.regnerba.com"'
+        BASE_URL: '"https://albion.regnerba.com/api/"'
       }
     }),
     // new webpack.optimize.UglifyJsPlugin({
