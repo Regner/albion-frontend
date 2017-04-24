@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: albion-frontend
+  annotations:
+    kubernetes.io/ingress.class: "traefik"
+spec:
+  rules:
+    - host: albion.regnerba.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: albion-frontend
+              servicePort: http

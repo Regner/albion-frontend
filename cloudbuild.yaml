@@ -3,7 +3,7 @@ steps:
     args: ['install']
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'build']
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['cp', 'index.html', 'gs://albion.regnerba.com/index.html']
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['cp', 'dist/build.js', 'gs://albion.regnerba.com/dist/build.js']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [ 'build', '-t', 'us.gcr.io/$PROJECT_ID/albion/frontend:latest', '.' ]
+images:
+  - 'us.gcr.io/$PROJECT_ID/albion/frontend:latest'
