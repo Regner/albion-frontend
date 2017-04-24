@@ -13,7 +13,7 @@ axios.defaults.baseURL = process.env.BASE_URL
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: __dirname,
   routes: [
     {path: '/sde', component: SDE},
