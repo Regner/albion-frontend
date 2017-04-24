@@ -10,12 +10,12 @@ function format(value, power) {
 export default function (value) {
   value = parseFloat(value, 10);
   for (var i = 0; i < UNITS.length; i++) {
-      if (value < Math.pow(STEP, i)) {
-          if (UNITS[i - 1]) {
-              return format(value, i - 1);
-          }
-          return value + UNITS[i];
+    if (value < Math.pow(STEP, i)) {
+      if (UNITS[i - 1]) {
+        return format(value, i - 1);
       }
+      return value + UNITS[i];
+    }
   }
   return format(value, i - 1);
 }

@@ -5,5 +5,8 @@ steps:
     args: ['run', 'build']
   - name: 'gcr.io/cloud-builders/docker'
     args: [ 'build', '-t', 'us.gcr.io/$PROJECT_ID/albion/frontend:latest', '.' ]
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [ 'build', '-t', 'us.gcr.io/$PROJECT_ID/albion/frontend:$COMMIT_SHA', '.' ]
 images:
   - 'us.gcr.io/$PROJECT_ID/albion/frontend:latest'
+  - 'us.gcr.io/$PROJECT_ID/albion/frontend:$COMMIT_SHA'
