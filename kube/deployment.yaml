@@ -3,6 +3,12 @@ kind: Deployment
 metadata:
   name: albion-frontend
 spec:
+  minReadySeconds: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+        maxUnavailable: 1
+        maxSurge: 1
   replicas: 2
   template:
     metadata:

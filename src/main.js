@@ -1,5 +1,6 @@
 import axios from 'axios'
 import Vue from 'vue'
+import VueAnalytics from 'vue-analytics'
 import VueRouter from 'vue-router'
 
 import store from './store'
@@ -26,7 +27,10 @@ const router = new VueRouter({
   ]
 })
 
-
+Vue.use(VueAnalytics, {
+  id: 'UA-97974740-1',
+  router
+})
 
 new Vue({
   el: '#app',
