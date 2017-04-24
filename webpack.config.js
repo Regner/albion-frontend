@@ -42,6 +42,7 @@ if (process.env.NODE_ENV === 'development') {
       'process.env': {
         NODE_ENV: '"development"',
         BASE_URL: '"http://localhost:8000"'
+        // BASE_URL: '"https://albion.regnerba.com/api/"'
       }
     })
   ])

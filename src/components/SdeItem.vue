@@ -1,6 +1,6 @@
 <template>
   <li>
-    <a :href="url">{{name}}</a>
+    <a :href="url">{{updated}} - {{name}} - {{size | file-size}}</a>
   </li>
 </template>
 
@@ -10,7 +10,9 @@
   export default {
     props: [
       'name',
-      'url'
+      'url',
+      'size',
+      'updated'
     ]
   }
 </script>

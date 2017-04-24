@@ -4,7 +4,7 @@
       <span :class="chevron"></span> {{ version }}
     </label>
     <ul v-show="open">
-      <sde-item v-for="item in items" :name="item.name" :url="item.url"></sde-item>
+      <sde-item v-for="item in items" :name="item.name" :url="item.url" :size="item.size" :updated="item.updated"></sde-item>
     </ul>
   </li>
 </template>

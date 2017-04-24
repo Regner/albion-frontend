@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="sde">
     <h2>SDE</h2>
     <p>The SDE is a collection of static information that ships with Albion Online and that has been converted into more useful formats.</p>
-    <p>You can view the source code used to build the SDE here: https://github.com/Regner/aodb</p>
+    <p>You can view the source code used to build the SDE <a href="https://github.com/Regner/aodb">here</a>.</p>
     <div v-if="loaded">
       <sde-explorer></sde-explorer>
     </div>
@@ -30,7 +30,7 @@
 </script>
 
 <style lang="stylus">
-ul
+.sde ul
   padding-left 10px
   list-style-type none
 </style>
